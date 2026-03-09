@@ -1,0 +1,67 @@
+// This code is a C# console app that uses SQLite to store and retrieve clipboard items
+// SQLite is a lightweight database system that stores data in a file
+// To use SQLite, you need to install the Microsoft.Data.Sqlite NuGet package
+// You can learn more about SQLite and C# from [this video] or [this article]
+
+using Microsoft.Data.Sqlite; // This namespace contains classes for working with SQLite
+using System; // This namespace contains basic classes like strings, arrays, etc.
+using System.Windows; // This namespace contains classes for creating Windows applications
+using System.Windows.Threading; // This namespace contains classes for creating timers and events
+
+namespace YourApp // This is the name of your project
+{
+    public partial class MainWindow : Window // This is the main window of your app
+    {
+        // Declare your variables here
+        // For example: private string _connectionString = "Your connection string here";
+
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            // Initialize your timer here
+
+            // Open a connection to your database and create your table here
+
+            // Load your data here
+        }
+
+        // This function is called every time the timer ticks (every second in this case)
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Check if the clipboard contains text
+
+            // If it does, save it and add it to your database and listbox
+
+            // Update your label here
+        }
+
+        // This function loads data from your database and adds it to your listbox
+        private void LoadData()
+        {
+            // Open a connection to your database
+
+            // Execute a command to get all text from your table
+
+            // Read the result and add each item to your listbox
+        }
+
+        // This function is called when the window is closing
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+           // Add code here if you want to do something when the window is closing
+        }
+
+        // This function is called when the CloseApp button is clicked
+        private void CloseApp_Click(object sender, RoutedEventArgs e)
+        {
+           // Add code here to close the app when the button is clicked
+        }
+
+        // This function is called when the CleanDatabase button is clicked
+        private void CleanDatabase_Click(object sender, RoutedEventArgs e)
+        {
+            // Add code here to clear all items from your listbox and database
+        }
+    }
+}
